@@ -1,0 +1,24 @@
+# original
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Rediriger toute requête vers /laravel/project.10.48.12/project vers /laravel/project.10.48.12/project/public/
+    RewriteCond %{REQUEST_URI} ^/laravel/project.10.48.12/project/(.*)$
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^laravel/project.10.48.12/project(.*)$ /laravel/project.10.48.12/project/public/$1 [L]
+</IfModule>
+
+# chatgpt
+# Avec cette règle, toutes les requêtes devraient être redirigées vers index.php dans le répertoire public. Si cela fonctionne, le problème peut résider dans les conditions ou les règles plus complexes
+#<IfModule mod_rewrite.c>
+#    RewriteEngine On
+#
+#    # Test simple de redirection
+#    RewriteRule ^.*$ /laravel/laravel-5-simple-website/project/public/index.php [L]
+#</IfModule>
+
+
+
+
+
