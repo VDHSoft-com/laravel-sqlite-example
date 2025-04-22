@@ -3,7 +3,7 @@
     <a href="https://www.vdhsoft.com"><img src="https://badgen.net/badge/my site/vdhsoft"/></a>
 </p>
 
-This a small CRUD example showing how to use SQLite database with Laravel 10
+This is a small CRUD example showing how to use SQLite database with Laravel 10
 
 ![Image description](previews/preview.gif)
 
